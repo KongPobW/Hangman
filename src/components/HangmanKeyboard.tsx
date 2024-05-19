@@ -36,7 +36,7 @@ type HangmanKeyboardProps = {
 
 function HangmanKeyboard({ addGuessLetter, activeLetters, disabled = false, inactiveLetters }: HangmanKeyboardProps) {
     return (
-        <div className="grid gap-[0.5rem]" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))" }}>
+        <div className="grid gap-[0.5rem] mx-3" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))" }}>
             {KEYS.map(key => {
                 const isActive = activeLetters.includes(key);
                 const isInactive = inactiveLetters.includes(key);
