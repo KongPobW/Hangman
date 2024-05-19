@@ -63,14 +63,10 @@ function App() {
     <div className="max-w-[800px] flex flex-col gap-8 mx-auto items-center my-5">
       <div className="text-center text-[2rem]">
         {isWin && (
-          <div className="text-green-600 font-bold">
-            Win! - Refresh to try again
-          </div>
+          <div className="text-green-600 font-bold">Win!</div>
         )}
         {isLose && (
-          <div className="text-red-600 font-bold">
-            Lose! - Refresh to try again
-          </div>
+          <div className="text-red-600 font-bold">Lose!</div>
         )}
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
